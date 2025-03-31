@@ -23,12 +23,6 @@ namespace Labsheet31March
         public string ContactNumber { get; set; }
         public virtual List<Booking> Bookings { get; set; }
     }
-    public class RestaurantData
-    {
-        public int RestaurantId { get; set; }
-        public string RestaurantName { get; set; }
-        public string RestaurantPhone { get; set; }
-    }
 
     public class BookingData : DbContext
     {
