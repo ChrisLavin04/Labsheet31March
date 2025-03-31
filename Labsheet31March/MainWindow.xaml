@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <!-- Booking Details -->
+        <Label Content="Booking Details" HorizontalAlignment="Left" Margin="26,24,0,0" VerticalAlignment="Top" Width="156" Height="41" FontSize="20"/>
+        <DatePicker x:Name="DTPKSearchDate" HorizontalAlignment="Left" Margin="189,32,0,0" VerticalAlignment="Top"/>
+
+        <!-- Booking List -->
+        <ListBox x:Name="LBXBookingData" HorizontalAlignment="Left" Height="284" Margin="30,75,0,0" VerticalAlignment="Top" Width="535" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
+        <!-- New Booking Section -->
+        <Label Content="New Booking" Width="156" VerticalAlignment="Top" Margin="577,34,0,0" Height="41" HorizontalAlignment="Left" FontSize="20"/>
+        <DatePicker x:Name="DTBKBookingDate" HorizontalAlignment="Left" Margin="598,102,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="TBXNoOfCustomers" HorizontalAlignment="Left" Height="22" Margin="598,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Text="Number of Customers" />
+        <TextBox x:Name="TBXCustomerName" HorizontalAlignment="Left" Height="22" Margin="598,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Text="Customer Name"/>
+        <TextBox x:Name="TBXContactNumber" HorizontalAlignment="Left" Height="22" Margin="598,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Text="Contact Number"/>
+
+        <!-- Buttons -->
+        <Button x:Name="BTNCustomerSearch" Content="Customer Search" HorizontalAlignment="Left" Margin="633,327,0,0" VerticalAlignment="Top" Width="134"/>
+        <Button x:Name="BTNDeleteBooking" Content="Delete Booking" HorizontalAlignment="Left" Margin="421,404,0,0" VerticalAlignment="Top" Width="155"/>
+
+        <!-- Capacity Information -->
+        <Label Content="Capacity 40" HorizontalAlignment="Left" Margin="38,401,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Bookings" HorizontalAlignment="Left" Margin="128,401,0,0" VerticalAlignment="Top" Width="63"/>
+        <TextBlock x:Name="TBKBookings" HorizontalAlignment="Left" Margin="191,406,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="-"/>
+        <Label Content="Available" HorizontalAlignment="Left" Margin="221,401,0,0" VerticalAlignment="Top" Width="70"/>
+        <TextBlock x:Name="TBKAvailable" HorizontalAlignment="Left" Margin="291,406,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="-"/>
     </Grid>
 </Window>
