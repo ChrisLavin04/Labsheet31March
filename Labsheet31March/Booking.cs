@@ -10,8 +10,9 @@ namespace Labsheet31March
     public class Booking
     {
         public int BookingId { get; set; }
-        public DateTime BookingsDate { get; set; }
+        public DateTime BookingDate { get; set; }
         public int NumberOfParticipants { get; set; }
+        public int CustomerId { get; set; }
         public virtual Customer Customer { get; set; }
     }
     public class Customer
@@ -21,6 +22,12 @@ namespace Labsheet31March
 
         public string ContactNumber { get; set; }
         public virtual List<Booking> Bookings { get; set; }
+    }
+    public class RestaurantData
+    {
+        public int RestaurantId { get; set; }
+        public string RestaurantName { get; set; }
+        public string RestaurantPhone { get; set; }
     }
 
     public class BookingData : DbContext
